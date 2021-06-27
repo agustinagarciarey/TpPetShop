@@ -1,13 +1,11 @@
 body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     padding: 0;
     margin: 0;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
-
+/** HEADER **/
 
 .barra-superior {
     background-color: #222222;
@@ -31,6 +29,8 @@ header nav {
 .barra-superior li{
     margin-right:1rem;
 }
+
+/** PRINCIPAL */
 
 .principal {
     background-image: url(../img/fondo.png);
@@ -80,6 +80,8 @@ nav img {
     font-size:1.3rem;
 }
 
+/**PRODUCTOS**/
+
 .brown {
     color: #3C2313;
 }
@@ -128,6 +130,8 @@ nav img {
     color: #F0A83E;
     margin-top: 0;
 }
+
+/** FORM **/
 
 .form-contactanos {
     text-align: center;
@@ -179,6 +183,8 @@ input:focus{
     
 }
 
+/**SUSCRIPTION*/
+
 .suscription {
     margin-top: 2rem;
     background-color:#F0A83E;
@@ -222,6 +228,8 @@ input:focus{
     margin-left: 1rem;
     
 }
+
+/**FOOTER*/
 
 footer {
     color: white;
@@ -271,3 +279,6 @@ footer {
     margin:0;
 }
 
+.img-logo {
+    width: 15rem;
+}
