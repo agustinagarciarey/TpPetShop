@@ -5,20 +5,21 @@ body {
     margin: 0;
 }
 
+
 /** HEADER **/
 
 .barra-superior {
     background-color: #222222;
-    color:white; 
-    display: flex; 
+    color: white;
+    display: flex;
     justify-content: space-around;
 }
 
 header nav {
-    background-color: #F0A83E; 
-    display: flex; 
-    justify-content: space-around; 
-    height: 5rem; 
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-around;
+    height: 5rem;
     align-items: center;
 }
 
@@ -26,11 +27,12 @@ header nav {
     display: flex;
 }
 
-.barra-superior li{
-    margin-right:1rem;
+.barra-superior li {
+    margin-right: 1rem;
 }
 
-/** PRINCIPAL */
+
+/** PRINCIPAL **/
 
 .principal {
     background-image: url(../img/fondo.png);
@@ -44,18 +46,17 @@ header nav {
 }
 
 .principal div {
-    padding-top:10rem;
-    padding-bottom:10rem;
-    padding-right: 3rem
+    padding: 10rem 2rem;
 }
 
 .principal h2 {
-    margin-top:0; 
-    background-color: white; 
-    border-radius: .8rem; 
-    display: inline; 
-    padding: .8rem; color:#3C2313;
-    font-size: 30px;
+    margin-top: 0;
+    background-color: white;
+    border-radius: .8rem;
+    display: inline;
+    padding: .8rem 1.2rem;
+    color: #3C2313;
+    font-size: 27px;
     font-weight: normal;
 }
 
@@ -75,23 +76,26 @@ nav img {
 }
 
 .btn-comederos {
-    background-color: #F0A83E; 
-    color:white; 
-    font-size:1.3rem;
+    background-color: #F0A83E;
+    color: white;
+    font-size: 1.3rem;
 }
+
 
 /**PRODUCTOS**/
 
 .brown {
     color: #3C2313;
 }
+
 .productos-destacados {
     text-align: center;
     margin-top: 2rem;
 }
+
 .img-patita {
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
 }
 
 .productos-destacados h1 {
@@ -131,19 +135,22 @@ nav img {
     margin-top: 0;
 }
 
+
 /** FORM **/
 
 .form-contactanos {
     text-align: center;
 }
+
 .form-contactanos h2 {
     font-size: 30px;
 }
+
 input {
     border: 0px;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
@@ -151,18 +158,18 @@ input:focus{
     margin: 0.3rem;
     background-color: #3C2313;
     width: 30%;
-    border-radius: .8rem; 
+    border-radius: .8rem;
     padding: 1rem;
 }
 
-.form-contactanos input::placeholder{
+.form-contactanos input::placeholder {
     color: white;
 }
 
 .btn {
-    border-radius: .8rem; 
-    border: none; 
-    padding: 1rem 1.5rem; 
+    border-radius: .8rem;
+    border: none;
+    padding: 1rem 1.5rem;
 }
 
 .btn-form {
@@ -180,21 +187,20 @@ input:focus{
 
 .btn-send {
     background-color: #F0A83E;
-    
 }
 
-/**SUSCRIPTION*/
+
+/**SUSCRIPTION**/
 
 .suscription {
     margin-top: 2rem;
-    background-color:#F0A83E;
+    background-color: #F0A83E;
     height: 4rem;
     display: flex;
-    justify-content:space-between;
-    color:white;
+    justify-content: space-between;
+    color: white;
     padding: 0.5rem 2rem;
 }
-
 
 .suscription div {
     display: flex;
@@ -206,17 +212,18 @@ input:focus{
     width: 3rem;
     margin-right: 1rem;
 }
+
 .suscription input {
     width: 25rem;
     background: white;
     border: 0px;
 }
 
-.suscription input::placeholder{
+.suscription input::placeholder {
     color: #A0A0A0;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
@@ -226,10 +233,10 @@ input:focus{
     padding-top: 0.7em;
     padding-bottom: 0.7rem;
     margin-left: 1rem;
-    
 }
 
-/**FOOTER*/
+
+/**FOOTER**/
 
 footer {
     color: white;
@@ -258,11 +265,11 @@ footer {
     margin-bottom: 1rem;
 }
 
-.footer-contacto div div{
+.footer-contacto div div {
     display: block;
 }
 
-.footer-contacto h3{
+.footer-contacto h3 {
     margin-bottom: 0;
     text-align: left;
 }
@@ -273,12 +280,96 @@ footer {
     text-align: left;
 }
 
-.footer-derechos{
+.footer-derechos {
     background-color: #222222;
     padding: 0.2rem;
-    margin:0;
+    margin: 0;
 }
 
 .img-logo {
     width: 15rem;
+}
+
+
+/**MENU DESPLEGABLE**/
+
+#menu-desplegable {
+    display: none;
+}
+
+
+/*Celu*/
+
+@media (max-width: 460px) {
+    /** HEADER **/
+    .barra-superior {
+        display: none;
+    }
+    #menu {
+        padding: 0 1.5rem;
+    }
+    #menu img {
+        width: 70%;
+    }
+    #menu li {
+        display: none;
+    }
+    #menu-desplegable {
+        display: inline;
+    }
+    /** PRINCIPAL **/
+    .principal {
+        height: 25rem;
+        background-position: left;
+    }
+    h1 {
+        margin: 1rem;
+    }
+    .principal div {
+        padding: 10rem 1rem;
+    }
+    .principal h2 {
+        display: block;
+        text-align: center;
+        padding: .8rem 0.5rem;
+    }
+    .productos {
+        display: block;
+    }
+    /** FORM **/
+    .form-contactanos input {
+        width: 80%;
+    }
+    .btn-form {
+        margin: 1rem;
+        width: 40%;
+    }
+    /**SUSCRIPTION**/
+    .suscription {
+        display: block;
+        padding: 1;
+        height: 6rem;
+    }
+    .suscription h3 {
+        margin: 0;
+    }
+    .suscription input {
+        padding: 0.7rem 1rem;
+    }
+    .suscription input::placeholder {
+        font-size: 0.7rem;
+    }
+    .btn-suscribir {
+        font-weight: bold;
+    }
+    /**FOOTER**/
+    .footer-section {
+        flex-direction: column-reverse;
+    }
+    .img-logo {
+        margin-top: 1rem;
+    }
+    .img-logo img {
+        width: 70%;
+    }
 }
