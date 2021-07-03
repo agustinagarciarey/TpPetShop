@@ -38,7 +38,6 @@ header nav {
     background-image: url(../img/fondo.png);
     width: 100%;
     text-align: right;
-    height: 30rem;
     min-height: 25rem;
     background-position: center center;
     background-size: cover;
@@ -46,7 +45,7 @@ header nav {
 }
 
 .principal div {
-    padding: 10rem 2rem;
+    padding: 10rem 3rem;
 }
 
 .principal h2 {
@@ -209,7 +208,7 @@ input:focus {
 
 .suscription img {
     height: 2.5rem;
-    width: 3rem;
+    width: 2.5rem;
     margin-right: 1rem;
 }
 
